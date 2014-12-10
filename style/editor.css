@@ -1,0 +1,42 @@
+#level-editor{
+	width: 60%;
+	border-right: 1px solid rgba(0,0,0,0.2);
+
+}
+
+#entity-editor{	
+	width: 40%;
+}
+
+#level-editor, #entity-editor{
+	height: 100%;
+	padding-top: 20px;
+}
+
+#level-panel canvas{
+	border: 1px solid rgba(0,0,0,0.2);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABlBMVEWtra3///837QcSAAAAFUlEQVQY02NghAIGGBgggQG2HiYAAEUQAIEnpAxuAAAAAElFTkSuQmCC);
+}
+
+#level-panel{
+	width: 640px;
+	height: 380px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#selector-panel{
+	height: calc(100% - 380px);
+	width: 100%;
+}
+
+#tile-selector, #entity-selector{
+	width: calc(50% - 1px);
+	float: left;
+	height: 100%;
+	border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+#tile-selector{
+	border-right: 1px solid rgba(0,0,0,0.2);
+}

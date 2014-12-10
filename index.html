@@ -2,8 +2,32 @@
 <html>
 	<head>
 		<title>SunriseJS LevelEditor</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style/icons.css">
+		<link rel="stylesheet" type="text/css" href="style/util.css">
+		<link rel="stylesheet" type="text/css" href="style/sidebar.css">
+		<link rel="stylesheet" type="text/css" href="style/editor.css">
 	</head>
 	<body>
+		<div id="headbar">
+			<div class="icon-menu"></div>
+		</div>
+		<div id="sidebar">
 
+		</div>
+		<div id="level-editor">
+			<div id="level-panel">
+				<canvas width="640" height="360"></canvas>
+			</div>
+			<div id="selector-panel">
+				<div id="tile-selector">
+				</div>
+				<div id="entity-selector">
+				</div>
+			</div>
+		</div>
+		<div id="entity-editor"></div>
+		<script type="text/javascript" src="js/editor.js"></script>
+		<script type="text/javascript" src="js/sidebar.js"></script>
 	</body>
 </html>
