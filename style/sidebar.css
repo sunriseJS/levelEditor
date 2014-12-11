@@ -7,5 +7,53 @@
 	left: -300px;
 	background-color: white;
 	transition: left 0.3s ease-in-out;
+	z-index: 99;
 
+}
+
+#sidebar > .background {
+	background-image: url(../assets/graphics/sidebar.jpg);
+	height: 44px;
+	width: 260px;
+	padding: 100px 20px 0px 20px;
+	color: #fff;
+	font-weight: 300;
+	font-size: 24pt;
+	cursor: default;
+}
+
+#sidebar > ul{
+	list-style: none;
+	width: 100%;
+	padding: 0px;
+}
+
+#sidebar > ul > li{
+	width: calc(100% - 40px);
+	height: 25px;
+	padding: 15px 20px;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+#sidebar > ul > li:hover{
+	background-color: #ddd;
+}
+
+#sidebar > ul > li > .label{
+	margin-left: 10px;
+}
+
+#sidebar > ul.bottom{
+	background-color: #444;
+	color: #fff;
+	margin: 0px;	
+}
+
+#sidebar > ul.bottom > li:hover{
+	background-color: #222;
+}
+
+#sidebar > ul.bottom > li{
+	background-color: #444;
 }

@@ -9,24 +9,63 @@
 		<link rel="stylesheet" type="text/css" href="style/editor.css">
 	</head>
 	<body>
+		<div id="dark-overlay"></div>
 		<div id="headbar">
 			<div class="icon-menu"></div>
 		</div>
 		<div id="sidebar">
-
+			<div class="background">sunriseJS</div>
+			<ul>
+				<li>
+					<span class="icon-floppy"></span>
+					<span class="label">Save</span>
+				</li>
+				<li>
+					<span class="icon-folder-open-empty"></span>
+					<span class="label">Open</span>
+				</li>
+				<li>
+					<span class="icon-export"></span>
+					<span class="label">Export</span>
+				</li>
+			</ul>
+			<ul class="bottom">
+				<li link="http://sunrisejs.net">
+					<span class="icon-link-ext"></span>
+					<span class="label">SunriseJS</span>
+				</li>
+				<li link="http://sunrisejs.github.io">
+					<span class="icon-link-ext"></span>
+					<span class="label">Wiki</span>
+				</li>
+				<li link="http://github.com/sunriseJS/sunriseJS">
+					<span class="icon-github-circled"></span>
+					<span class="label">GitHub</span>
+				</li>
+			</ul>
 		</div>
 		<div id="level-editor">
 			<div id="level-panel">
 				<canvas width="640" height="360"></canvas>
 			</div>
 			<div id="selector-panel">
-				<div id="tile-selector">
+				<div id="tile-selector" class="panel">
+					<div class="title">
+						Background/Tiles
+					</div>
 				</div>
-				<div id="entity-selector">
+				<div id="entity-selector" class="panel">
+					<div class="title">
+						Entities
+					</div>
 				</div>
 			</div>
 		</div>
-		<div id="entity-editor"></div>
+		<div id="entity-editor">
+			<div class="title">
+				EntityEditor
+			</div>
+		</div>
 		<script type="text/javascript" src="js/editor.js"></script>
 		<script type="text/javascript" src="js/sidebar.js"></script>
 	</body>
