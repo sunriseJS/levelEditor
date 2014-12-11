@@ -28,7 +28,7 @@ sunriseEditor.sidebar = (function(){
 			overlay.style.display = 'block';
 			setTimeout(function(){
 				overlay.style.opacity = '1';
-			},3);
+			},10);
 		},
 
 		hide : function(){

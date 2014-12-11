@@ -2,17 +2,17 @@
 	width: 60%;
 	box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.2);
 	padding-top: 20px;
+	height: calc(100% - 50px);
 
 }
 
 #entity-editor{	
 	width: calc(40% - 10px);
-	height: calc(100% - 10px);
+	height: calc(100% - 40px);
 	padding: 5px; 
 }
 
 #level-editor, #entity-editor{
-	height: 100%;
 	position: relative;
 	float: left;
 }
@@ -20,6 +20,7 @@
 #level-panel canvas{
 	border: 1px solid rgba(0,0,0,0.2);
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABlBMVEWtra3///837QcSAAAAFUlEQVQY02NghAIGGBgggQG2HiYAAEUQAIEnpAxuAAAAAElFTkSuQmCC);
+	cursor: not-allowed;
 }
 
 #level-panel{
@@ -49,6 +50,7 @@
 
 .title{
 	color: rgb(10, 10, 10);
-	font-size: 24pt;
+	height: 36px;
+	font-size: 24px;
 	font-weight: 300;
 }

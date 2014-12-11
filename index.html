@@ -7,6 +7,9 @@
 		<link rel="stylesheet" type="text/css" href="style/util.css">
 		<link rel="stylesheet" type="text/css" href="style/sidebar.css">
 		<link rel="stylesheet" type="text/css" href="style/editor.css">
+		<link rel="stylesheet" type="text/css" href="style/tileselector.css">
+		<link rel="stylesheet" type="text/css" href="style/entityselector.css">
+		<link rel="stylesheet" type="text/css" href="style/input.css">
 	</head>
 	<body>
 		<div id="dark-overlay"></div>
@@ -17,6 +20,10 @@
 			<div class="background">sunriseJS</div>
 			<ul>
 				<li>
+					<span class="icon-play"></span>
+					<span class="label">Run</span>
+				</li>
+				<li>
 					<span class="icon-floppy"></span>
 					<span class="label">Save</span>
 				</li>
@@ -24,7 +31,7 @@
 					<span class="icon-folder-open-empty"></span>
 					<span class="label">Open</span>
 				</li>
-				<li>
+				<li id="menu-export">
 					<span class="icon-export"></span>
 					<span class="label">Export</span>
 				</li>
@@ -32,15 +39,15 @@
 			<ul class="bottom">
 				<li link="http://sunrisejs.net">
 					<span class="icon-link-ext"></span>
-					<span class="label">SunriseJS</span>
+					<span class="label">SunriseJS.net</span>
 				</li>
 				<li link="http://sunrisejs.github.io">
 					<span class="icon-link-ext"></span>
-					<span class="label">Wiki</span>
+					<span class="label">SunriseJS Wiki</span>
 				</li>
 				<li link="http://github.com/sunriseJS/sunriseJS">
 					<span class="icon-github-circled"></span>
-					<span class="label">GitHub</span>
+					<span class="label">SunriseJS on GitHub</span>
 				</li>
 			</ul>
 		</div>
@@ -53,11 +60,44 @@
 					<div class="title">
 						Background/Tiles
 					</div>
+					
 				</div>
 				<div id="entity-selector" class="panel">
 					<div class="title">
 						Entities
 					</div>
+					<ul>
+						<li class="card clear">
+							<div class="info"></div>
+							<div class="preview" style="background-image: url(upload/sheet_soldier.png); width:64px"></div>
+						</li>
+						<li class="card clear">
+							<div class="info"></div>
+							<div class="preview" style="background-image: url(upload/sheet_soldier.png); width:64px"></div>
+						</li>
+						<li class="card clear">
+							<div class="info"></div>
+							<div class="preview" style="background-image: url(upload/sheet_soldier.png); width:64px"></div>
+						</li>
+						<li class="card clear">
+							<div class="info"></div>
+							<div class="preview" style="background-image: url(upload/sheet_soldier.png); width:64px"></div>
+						</li>
+						<li class="card clear">
+							<div class="info"></div>
+							<div class="preview" style="background-image: url(upload/sheet_soldier.png); width:64px"></div>
+						</li>
+						<li class="card clear">
+							<div class="info"></div>
+							<div class="preview" style="background-image: url(upload/sheet_soldier.png); width:64px"></div>
+						</li>
+						<li class="card clear">
+							<div class="info"></div>
+							<div class="preview" style="background-image: url(upload/sheet_soldier.png); width:64px"></div>
+						</li>
+						
+					</ul>
+					<div class="fab">+</div>
 				</div>
 			</div>
 		</div>
@@ -68,5 +108,7 @@
 		</div>
 		<script type="text/javascript" src="js/editor.js"></script>
 		<script type="text/javascript" src="js/sidebar.js"></script>
+		<script type="text/javascript" src="js/level.js"></script>
+		<script type="text/javascript" src="js/tileplacer.js"></script>
 	</body>
 </html>
