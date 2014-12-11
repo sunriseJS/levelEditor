@@ -1,29 +1,30 @@
-#tile-selector > .tileset{
-	width: calc(100% - 18px);
-	padding: 4px;
-	margin: 5px;
-	border-radius: 2px;
-	box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2),
-				0px 0px 10px 0px rgba(0,0,0,0.2);
-	
+#tile-selector .tileset{
+	width: calc(100% - 18px);	
 }
 
-#tile-selector > .tileset > canvas{
+#tile-selector .tileset > canvas{
 	float: left;
 	cursor: crosshair;
 }
 
-#tile-selector > .tileset > .controls{
+#tile-selector .tileset > .controls{
 	float: left;
 }
 
 
-#tile-selector > .tileset > .controls > label{
+#tile-selector .tileset > .controls > label{
 	display: block;
 	margin: 10px;
 }
 
-#tile-selector > .tileset > .controls input{
+#tile-selector .tileset > .controls input{
 	width: 64px;
 	margin-left: 10px;
+}
+
+#tile-selector > ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	height: calc(100% - 46px);
 }

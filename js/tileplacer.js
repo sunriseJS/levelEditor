@@ -5,7 +5,7 @@ sunriseEditor.tileplacer = (function(){
 	var focus = undefined;
 	var _this = {
 		init : function(){
-			dom = document.querySelector('#tile-selector');
+			dom = document.querySelector('#tile-selector > ul');
 			_this.addTileset('upload/tileset1.png', 'tileset1');
 			
 		},
@@ -73,18 +73,18 @@ TileSet.prototype.update = function(showSelection){
 
 TileSet.prototype.appendTo= function(element){
 	var _this = this;
-	var data = '<div class="tileset card clear" image="'+this.name+'">'+
+	var data = '<li class="tileset card clear" image="'+this.name+'">'+
 					'<canvas></canvas>'+
 					'<div class="controls">'+
 						'<label>TileWidth<input type="number" name="tile-width" /></label>'+
 						'<label>TileHeight<input type="number" name="tile-height" /></label>'+
 						'<label>Z index<input type="number" name="z-index" /></label>'+
 					'</div>'+
-				'</div>';
+				'</li>';
 	
 
 	element.innerHTML += data;
-	this.element = element.querySelector('div[image='+this.name+']');
+	this.element = element.querySelector('li[image='+this.name+']');
 	this.canvas = this.element.querySelector('canvas'),
 	this.context = this.canvas.getContext('2d');
 	this.input = {};
@@ -92,21 +92,23 @@ TileSet.prototype.appendTo= function(element){
 	this.input.tileHeight = this.element.querySelector('input[name=tile-height]');
 	this.input.zIndex = this.element.querySelector('input[name=z-index]');
 
-	this.image.onload = function(){
-		_this.width = _this.image.width;
-		_this.height = _this.image.height;
-		_this.tileWidth = _this.image.width;
-		_this.tileHeight = _this.image.height;
+	this.image.onload = (function(scope){
+		return function(){
+			scope.width = scope.image.width;
+			scope.height = scope.image.height;
+			scope.tileWidth = scope.image.width;
+			scope.tileHeight = scope.image.height;
 
-		_this.canvas.width = _this.width;
-		_this.canvas.height = _this.height;
+			scope.canvas.width = scope.width;
+			scope.canvas.height = scope.height;
 
-		_this.input.tileWidth.value = _this.tileWidth;
-		_this.input.tileHeight.value = _this.tileHeight;
-		_this.input.zIndex.value = 0;
+			scope.input.tileWidth.value = scope.tileWidth;
+			scope.input.tileHeight.value = scope.tileHeight;
+			scope.input.zIndex.value = 0;
 
-		_this.update();
-	}
+			_this.update();
+		}
+	})(this);
 
 	this.image.src = this.imagefile;
 

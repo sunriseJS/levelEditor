@@ -4,6 +4,7 @@ sunriseEditor.init = function(){
 	sunriseEditor.sidebar.init();
 	sunriseEditor.level.init();
 	sunriseEditor.tileplacer.init();
+	sunriseEditor.entitymanager.init();
 
 	document.querySelector('#menu-export').addEventListener('click', function(){
 		sunriseEditor.export();
