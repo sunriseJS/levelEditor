@@ -1,0 +1,49 @@
+#entity-meta-data > div{
+	float: left;
+	width: calc(50% - 21px);
+	padding: 10px;
+}
+
+#entity-meta-data table{
+	text-align: right;
+}
+
+#entity-meta-data input{
+	width: 128px;
+}
+
+#entity-meta-data input[type=number]{
+	width: 64px;
+}
+
+#entity-meta-data input[type=button]{
+	width: auto;
+}
+
+#entity-meta-data table label, #entity-meta-data table input{
+	margin-right: 10px;
+}
+
+#entity-meta-data > div > ul > li{
+	color: #fff;
+	background-color: #444;
+	padding: 2px 2px 2px 15px;
+	margin: 2px;
+}
+
+
+#entity-meta-data > div > ul > li > span:last-child{
+	float: right;
+	font-size: 48px;
+	font-weight: 300;
+	height: 24px;
+	margin-top: -26px;
+	cursor: pointer;
+}
+
+#entity-editor ul{
+	list-style: none;
+	margin: 0px;
+	padding: 5px;
+}
+

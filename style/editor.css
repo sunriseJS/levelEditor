@@ -7,9 +7,10 @@
 }
 
 #entity-editor{	
-	width: calc(40% - 10px);
-	height: calc(100% - 40px);
-	padding: 5px; 
+	width: calc(40% - 20px);
+	height: calc(100% - 60px);
+	padding: 10px; 
+	display: none;
 }
 
 #level-editor, #entity-editor{

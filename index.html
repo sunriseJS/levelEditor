@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="style/editor.css">
 		<link rel="stylesheet" type="text/css" href="style/tileselector.css">
 		<link rel="stylesheet" type="text/css" href="style/entityselector.css">
+		<link rel="stylesheet" type="text/css" href="style/entityeditor.css">
 		<link rel="stylesheet" type="text/css" href="style/input.css">
 	</head>
 	<body>
@@ -34,6 +35,10 @@
 				<li id="menu-export">
 					<span class="icon-export"></span>
 					<span class="label">Export</span>
+				</li>
+				<li>
+					<span class="icon-cog"></span>
+					<span class="label">Game settings</span>
 				</li>
 			</ul>
 			<ul class="bottom">
@@ -76,8 +81,61 @@
 		</div>
 		<div id="entity-editor">
 			<div class="title">
-				EntityEditor
+				Entity settings
 			</div>
+			<div id="entity-meta-data" class="clear">
+				<div>
+					<table>
+						<tr>
+							<td>
+								<label for="name">Name</label>
+							</td>
+							<td>
+								<input type="text" name="name"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="width">Width</label>
+							</td>
+							<td>
+								<input type="number" name="width"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="height">Heigth</label>
+							</td>
+							<td>
+								<input type="number" name="height"/>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<label for="group-name">Groups</label>
+					<ul>
+						<li class="clear">
+							<span>toRender</span>
+							<span>-</span>
+						</li>
+						<li class="clear">
+							<span>player</span>
+							<span>-</span>
+						</li>
+					</ul>
+					<input type="text" name="group-name" />
+					<input type="button" value="add" />
+				</div>
+			</div>
+			<div class="title">
+				Components
+			</div>
+			<ul>
+				<li class="card">
+					Renderer
+				</li>
+			</ul>
 		</div>
 		<script type="text/javascript" src="js/editor.js"></script>
 		<script type="text/javascript" src="js/sidebar.js"></script>
