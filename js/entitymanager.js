@@ -4,6 +4,7 @@ sunriseEditor.entitymanager = (function(){
 		editorDom,
 		editor = {},
 		entityTypes = {},
+		componentChooser,
 		entities = [];
 
 
@@ -18,6 +19,17 @@ sunriseEditor.entitymanager = (function(){
 			var fab = document.querySelector('#entity-selector > .fab');
 			fab.addEventListener('click', function(){
 				_this.addEntityType('newEntity');
+			});
+
+			fab = document.querySelector('#entity-editor .fab');
+			fab.addEventListener('click', function(){
+				document.querySelector('#component-chooser').style.bottom = '-10px';
+			});
+
+			componentChooser = editorDom.querySelector('#component-chooser');
+			var close = editorDom.querySelector('#component-chooser > li:first-child');
+			close.addEventListener('click', function(){
+				componentChooser.style.bottom = "-300px";
 			});
 
 		},
